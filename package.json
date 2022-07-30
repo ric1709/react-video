@@ -9,6 +9,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "videojs-css": "^1.2.0",
+    "videojs-hotkeys": "^0.2.27",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "video.js": "^7.20.1"
   }
 }

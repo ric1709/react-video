@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Videojs } from '././components/video.js'
+import peaksoftTeam from './assets/images/peaksoftTeam.jpg'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const videoJsOptions = {
+	sources: [
+		{
+			src: 'https://vjs.zencdn.net/v/oceans.mp4',
+			type: 'video/mp4',
+		},
+	],
+	fluid: true,
+	autoplay: 'muted',
+	loop: true,
+	poster: peaksoftTeam,
 }
 
-export default App;
+function App() {
+	return (
+		<div className='App'>
+			<Videojs options={videoJsOptions} />
+		</div>
+	)
+}
+
+export default App
